@@ -1,0 +1,32 @@
+ext {
+    android = [
+            compileSdkVersion        : 25,
+            targetSdkVersion         : 25,
+            minSdkVersion            : 16,
+            buildToolsVersion        : "26.0.2",
+            applicationId            : "microsoft.shennong.graphdemoandroid",
+            versionCode              : 7,
+            versionName              : "2.0.1",
+            testInstrumentationRunner: "android.support.test.runner.AndroidJUnitRunner"
+    ]
+
+    dependencies = [
+            "junit"                      :   'junit:junit:4.12',
+            "appcompat-v7"               :   'com.android.support:appcompat-v7:25.3.1',
+            "app-support-v13"            :   'com.android.support:support-v13:25.3.1',
+            "android-support:design"     :   'com.android.support:design:25.3.1',
+            "guava"                    : 'com.google.guava:guava:23.0-android',
+            //bufferknife
+            "bufferknife-compile":         "com.jakewharton:butterknife-compiler:8.2.1",
+            "bufferknife":                  "com.jakewharton:butterknife:8.2.1",
+            // Include the sdk as a dependency
+            "microsoftgraph": "com.microsoft.graph:msgraph-sdk-android:1.2.+",
+
+            // Include the gson dependency
+            "googlegson":"com.google.code.gson:gson:2.3.1",
+
+            // Include this lib must add new repository in
+            // https://github.com/823546371/PullToRefresh
+            "refreshlist"                :   'com.jwenfeng.pulltorefresh:library:1.2.7',
+    ]
+}
